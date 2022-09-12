@@ -9,6 +9,8 @@ import { findMenuByLocation, MENU_LOCATION_NAVIGATION_DEFAULT } from 'lib/menus'
 
 import Section from 'components/Section';
 
+import Vegas from "../images/vegas.png"
+
 import styles from './Nav.module.scss';
 import NavListItem from 'components/NavListItem';
 
