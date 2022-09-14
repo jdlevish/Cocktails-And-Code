@@ -40,7 +40,7 @@ module.exports = withPlugins([[indexSearch], [feed], [sitemap]], {
 
 function parseEnvValue(value, defaultValue) {
   if (typeof value === 'undefined') return defaultValue;
-  if (value === true || value === 'true') return true;
+  if (value === true || value === 'true') return false;
   if (value === false || value === 'false') return false;
   return value;
 }
