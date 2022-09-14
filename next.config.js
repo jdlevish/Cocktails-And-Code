@@ -27,9 +27,9 @@ module.exports = withPlugins([[indexSearch], [feed], [sitemap]], {
     // the rest will be rendered on-demand
     POSTS_PRERENDER_COUNT: 5,
 
-    WORDPRESS_GRAPHQL_ENDPOINT: process.env.WORDPRESS_GRAPHQL_ENDPOINT,
+    WORDPRESS_GRAPHQL_ENDPOINT: 'http://headless.cocktails-and-code.com/graphql?=query',
     WORDPRESS_MENU_LOCATION_NAVIGATION: process.env.WORDPRESS_MENU_LOCATION_NAVIGATION || 'PRIMARY',
-    WORDPRESS_PLUGIN_SEO: parseEnvValue(process.env.WORDPRESS_PLUGIN_SEO, false),
+    WORDPRESS_PLUGIN_SEO: parseEnvValue(process.env.WORDPRESS_PLUGIN_SEO, true),
   },
 });
 
