@@ -29,7 +29,7 @@ module.exports = withPlugins([[indexSearch], [feed], [sitemap]], {
 
     WORDPRESS_GRAPHQL_ENDPOINT: 'http://headless.cocktails-and-code.com/graphql?=query',
     WORDPRESS_MENU_LOCATION_NAVIGATION: process.env.WORDPRESS_MENU_LOCATION_NAVIGATION || 'PRIMARY',
-    WORDPRESS_PLUGIN_SEO: parseEnvValue(process.env.WORDPRESS_PLUGIN_SEO, true),
+    WORDPRESS_PLUGIN_SEO: parseEnvValue(process.env.WORDPRESS_PLUGIN_SEO, false),
   },
 });
 
